@@ -141,4 +141,7 @@ dmypy.json
 *.key
 .env
 config.ini
-background.md 
+background.md
+
+# Development history and personal files
+.specstory/ 
