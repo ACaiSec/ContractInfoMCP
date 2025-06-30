@@ -1,0 +1,30 @@
+[project]
+name = "contract-inspector-mcp"
+version = "0.1.0"
+description = "MCP服务器：获取EVM合约链上信息"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "web3>=6.0.0",
+    "requests>=2.25.0",
+    "python-dotenv>=0.19.0",
+    "asyncio-throttle>=1.0.0",
+]
+
+[project.scripts]
+contract-inspector-mcp = "contract_inspector.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["contract_inspector"]
