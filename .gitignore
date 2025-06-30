@@ -140,4 +140,5 @@ dmypy.json
 # API keys and sensitive data
 *.key
 .env
-config.ini 
+config.ini
+background.md 
